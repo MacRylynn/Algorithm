@@ -52,7 +52,7 @@ public class Sort {
         }
     }
 
-    //简单选择牌组
+    //简单选择排序
     private static void xuanze(int[] org) {
         if (org.length <= 1) {
             return;

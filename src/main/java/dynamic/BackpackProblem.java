@@ -13,7 +13,7 @@ public class BackpackProblem {
         int[] w = {0, 2, 3, 4, 5};            //商品的体积2、3、4、5
         int[] v = {0, 3, 4, 5, 6};            //商品的价值3、4、5、6
         int bagV = 8;                            //背包大小
-        System.out.println(dpTest(total, w, v, bagV));
+        System.out.println(dpResult(total, w, v, bagV));
     }
     /**
      * 理解这个问题的前提
@@ -23,7 +23,7 @@ public class BackpackProblem {
      * @param bagContain 参数4：背包总共能装下的商品体积（或重量）
      * @return           返回结果：背包可以装下的最大价值和
      */
-    private static int dpTest(int total, int[] wight, int[] value, int bagContain) {
+    private static int dpResult(int total, int[] wight, int[] value, int bagContain) {
         if (wight.length != value.length || wight.length != total) {
             return 0;
         }
