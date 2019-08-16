@@ -10,13 +10,13 @@ package dynamic;
 public class BackpackProblem {
     public static void main(String[] args) {
         int total = 5;
-        int[] w = {0, 2, 3, 4, 5};            //商品的体积2、3、4、5
-        int[] v = {0, 3, 4, 5, 6};            //商品的价值3、4、5、6
-        int bagV = 8;                            //背包大小
+        int[] w = {0, 2, 3, 4, 5};  //商品的体积2、3、4、5
+        int[] v = {0, 3, 4, 5, 6};  //商品的价值3、4、5、6
+        int bagV = 8;               //背包大小
         System.out.println(dpResult(total, w, v, bagV));
     }
     /**
-     * 理解这个问题的前提
+     * 理解背包问题的前提
      * @param total      参数1：商品的总个数
      * @param wight      参数2：每一个商品的体积（或重量等）
      * @param value      参数3：每个商品对应的价值
