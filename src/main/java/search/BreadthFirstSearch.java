@@ -20,7 +20,7 @@ public class BreadthFirstSearch {
      *      1
      *   2    3
      * 4  5  6  7
-     * 深度优先的顺序应该是：1 2 3 4 5 6 7
+     * 广度优先的顺序应该是：1 2 3 4 5 6 7
      */
     public static void main(String[] args) {
         TreeNode node1 = new TreeNode(1);

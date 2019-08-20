@@ -18,7 +18,7 @@ public class BackpackProblem {
 
     /**
      * 理解背包问题的前提
-     *
+     * dp[i][j]表示，有前i个商品可以选择，并且目前还剩余的容量是j的情况下，此时背包里面商品总共的价值
      * @param total      参数1：商品的总个数
      * @param wight      参数2：每一个商品的体积（或重量等）
      * @param value      参数3：每个商品对应的价值
