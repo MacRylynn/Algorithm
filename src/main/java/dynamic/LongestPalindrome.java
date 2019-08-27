@@ -14,7 +14,7 @@ public class LongestPalindrome {
     }
 
     /**
-     * 辅助空间，flag[i][j]表示从第i个字符到第j个字符是否回文字符串
+     * 辅助空间:flag[i][j]表示从第i个字符到第j个字符是否回文字符串
      * 状态转移方程flag[i][j]=true时，flag[i+1][j-1]=true并且string[i]=string[j]
      *
      * @param string 原字符串
