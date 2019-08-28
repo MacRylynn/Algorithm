@@ -156,6 +156,44 @@ public class Sort {
             AdjustHeap(org, maxIndex, len);
         }
     }
+    
+  //归并
+    private static void MergeSort(int org[], int left, int right) {
+        if (right - left <= 4) {
+            charu(org);
+            return;
+        }
+        int mid = (right + left) / 2;
+        MergeSort(org, left, mid);
+        MergeSort(org, mid + 1, right);
+        if (org[mid] > org[mid + 1]) {
+            Merge(org, left, mid, right);
+        }
+    }
+
+    private static void Merge(int org[], int left, int mid, int right) {
+        int array[] = new int[right - left + 1];
+        for (int i = left; i <= right; i++) {
+            array[i - left] = org[i - left];
+        }
+        int i = left;
+        int j = mid + 1;
+        for (int k = left; k <= right; k++) {
+            if (i > mid + 1) {
+                array[k] = org[j - left];
+                j++;
+            } else if (j > right) {
+                array[k] = org[i - left];
+                i++;
+            } else if (org[mid] > org[mid + 1]) {
+                array[k] = org[i - left];
+                i++;
+            } else {
+                array[k] = org[j - left];
+                j++;
+            }
+        }
+    }
 
 
 }
