@@ -157,7 +157,7 @@ public class Sort {
         }
     }
     
-  //归并
+    //归并排序
     private static void MergeSort(int org[], int left, int right) {
         if (right - left <= 4) {
             charu(org);
